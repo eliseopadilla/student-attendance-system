@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login - Control de Asistencias</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+<style>
+    *{
+        margin:0; padding:0;
+        box-sizing:border-box;
+        font-family:'Poppins', sans-serif;
+    }
+
+    body{
+        height:100vh;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        background:linear-gradient(135deg,#4A89DC,#2ECC71);
+    }
+
+    .login-box{
+        background:white;
+        width:350px;
+        padding:30px;
+        border-radius:12px;
+        box-shadow:0 5px 15px rgba(0,0,0,.25);
+        text-align:center;
+        animation:fadeIn .6s;
+    }
+
+    @keyframes fadeIn{
+        from{opacity:0; transform:translateY(20px);}
+        to{opacity:1; transform:translateY(0);}
+    }
+
+    h2{
+        margin-bottom:25px;
+        font-weight:600;
+        color:#333;
+    }
+
+    .input-group{
+        position:relative;
+        margin-bottom:18px;
+    }
+
+    .input-group input{
+        width:100%;
+        padding:12px 40px 12px 12px;
+        border:2px solid #ddd;
+        border-radius:8px;
+        outline:none;
+        transition:.3s;
+        font-size:15px;
+    }
+
+    .input-group input:focus{
+        border-color:#4A89DC;
+    }
+
+    .input-group i{
+        position:absolute;
+        right:12px;
+        top:50%;
+        transform:translateY(-50%);
+        color:#666;
+    }
+
+    button{
+        width:100%;
+        padding:12px;
+        border:none;
+        border-radius:8px;
+        background:#4A89DC;
+        color:white;
+        font-size:16px;
+        cursor:pointer;
+        transition:.3s;
+        font-weight:600;
+    }
+
+    button:hover{
+        background:#357ABD;
+    }
+
+    #msg{
+        margin-top:12px;
+        font-size:.9em;
+        font-weight:600;
+    }
+
+</style>
+</head>
+<body>
+
+<div class="login-box">
+    <h2>Inicio de sesión</h2>
+
+    <div class="input-group">
+        <input type="email" id="email" placeholder="Correo electrónico" autocomplete="off">
+        <i class="fa-solid fa-envelope"></i>
+    </div>
+
+    <div class="input-group">
+        <input type="password" id="password" placeholder="Contraseña">
+        <i class="fa-solid fa-lock"></i>
+    </div>
+
+    <button id="btnLogin"><i class="fa-solid fa-arrow-right-to-bracket"></i> Ingresar</button>
+    <p id="msg"></p>
+</div>
+
+<script src="scriptlogin.js"></script>
+</body>
+</html>
+

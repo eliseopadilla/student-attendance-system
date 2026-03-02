@@ -1,0 +1,153 @@
+body {
+  background: #f3f4f7;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  color: #333;
+}
+
+h3, h4, h5 {
+  font-weight: 600;
+}
+
+.container {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+  margin-top: 25px;
+}
+
+.navbar {
+  background: #222831 !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.nav-link {
+  font-weight: 500;
+}
+
+.nav-link.active {
+  color: #76ffbe !important;
+  font-weight: 600;
+}
+
+.nav-tabs .nav-link {
+  color: #555;
+  font-weight: 500;
+  padding: 10px 20px;
+  border-radius: 8px 8px 0 0;
+}
+
+.nav-tabs .nav-link.active {
+  background: #fff !important;
+  border-bottom: 2px solid #28c76f !important;
+  color: #28c76f !important;
+  font-weight: 600;
+}
+
+.table {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.table thead {
+  background: #d6ffe7 !important;
+  color: #28a764 !important;
+}
+
+.table-hover tbody tr:hover {
+  background: #f0fdf6;
+}
+
+.btn-sm {
+  padding: 3px 8px;
+  border-radius: 6px;
+}
+
+.btn-warning {
+  background: #ffb44c;
+  border: none;
+}
+
+.btn-warning:hover {
+  background: #ffa726;
+}
+
+.btn-danger {
+  background: #ff6b6b;
+  border: none;
+}
+
+.btn-danger:hover {
+  background: #ff4b4b;
+}
+
+.btn-primary {
+  background: #28c76f;
+  border: none;
+}
+
+.btn-primary:hover {
+  background: #20b863;
+}
+
+.modal-content {
+  border-radius: 12px;
+  box-shadow: 0 7px 25px rgba(0,0,0,0.25);
+  border: none;
+}
+
+.modal-header {
+  background: linear-gradient(90deg, #28c76f, #20b863);
+  color: white;
+  border-radius: 12px 12px 0 0;
+}
+
+.modal-footer {
+  border-top: 1px solid #dfdfdf;
+}
+
+.form-control,
+.form-select {
+  border-radius: 8px;
+  border: 1px solid #ced4da;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #28c76f;
+  box-shadow: 0 0 0 0.2rem rgba(40,199,111,0.25);
+}
+
+.btn-outline-secondary {
+  border-radius: 8px;
+}
+
+.btn-outline-secondary:hover {
+  background: #e3e3e3;
+}
+
+.btn-refresh {
+  transition: 0.2s ease;
+}
+
+.btn-refresh:hover {
+  transform: rotate(180deg);
+}
+
+::-webkit-scrollbar {
+  width: 9px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #28c76f;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #20b863;
+}
