@@ -9,6 +9,8 @@ Web system to register daily student attendance (manual selection) and generate 
 - MySQL
 - Postman
 
+Security note: Credentials are managed via environment variables; .env is excluded from version control.
+
 ## Files
 - `Asistencias.sql`: database schema and initial setup
 - Frontend: `*Index.html`, `Style2.css`, `script*.js`
