@@ -11,11 +11,13 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public")); 
 
 
+require('dotenv').config();
+
 const db = mysql.createConnection({
   host: process.env.DB_HOST,
   user: process.env.DB_USER,
   password: process.env.DB_PASS,
-  database: "control_asistencias_db"
+  database: process.env.DB_NAME
 });
 
 
@@ -312,7 +314,7 @@ app.delete("/api/justificaciones/:id", (req, res) => {
 
 // ===================== USUARIOS ===========================
 app.get("/api/usuarios", (req, res) => {
-    db.query("SELECT id_usuario, nombre, apellido, email, password_hash, rol FROM usuarios", (err, results) => {
+    db.query("SELECT id_usuario, nombre, apellido, email, rol FROM usuarios", (err, results) => {
         if (err) return res.status(500).json({ error: err });
         res.json(results);
     });
@@ -476,10 +478,7 @@ app.delete("/api/clases/:id", (req, res) => {
 });
 
 
-// =========================================================
-//  SERVIDOR
-// =========================================================
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
-    console.log(`Servidor corriendo en http://localhost:${PORT}`);
+  console.log(`Servidor corriendo en http://localhost:${PORT}`);
 });
